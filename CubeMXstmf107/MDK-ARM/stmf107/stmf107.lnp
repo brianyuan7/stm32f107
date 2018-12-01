@@ -1,0 +1,23 @@
+--cpu Cortex-M3
+"stmf107\startup_stm32f107xc.o"
+"stmf107\main.o"
+"stmf107\gpio.o"
+"stmf107\stm32f1xx_it.o"
+"stmf107\stm32f1xx_hal_msp.o"
+"stmf107\stm32f1xx_hal_gpio_ex.o"
+"stmf107\stm32f1xx_hal_tim.o"
+"stmf107\stm32f1xx_hal_tim_ex.o"
+"stmf107\stm32f1xx_hal.o"
+"stmf107\stm32f1xx_hal_rcc.o"
+"stmf107\stm32f1xx_hal_rcc_ex.o"
+"stmf107\stm32f1xx_hal_gpio.o"
+"stmf107\stm32f1xx_hal_dma.o"
+"stmf107\stm32f1xx_hal_cortex.o"
+"stmf107\stm32f1xx_hal_pwr.o"
+"stmf107\stm32f1xx_hal_flash.o"
+"stmf107\stm32f1xx_hal_flash_ex.o"
+"stmf107\system_stm32f1xx.o"
+--library_type=microlib --strict --scatter "stmf107\stmf107.sct"
+--summary_stderr --info summarysizes --map --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "stmf107.map" -o stmf107\stmf107.axf
